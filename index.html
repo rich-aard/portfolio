@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d07ab9e57a.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/avatar.png" class="logo" alt="Deadpool Logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+               <!---- <i class="fa-regular fa-rectangle-xmark" onclick="closemenu()"></i>--->
+            </ul>
+           <!--- <i class="fa-solid fa-ellipsis" onclick="openmenu"></i>--->
+        </nav>
+        <div class="header-text">
+            <p></p>
+            <h1>Hi, I'm <span>Richard Khewa Limbu.</span> <br>And I'm an engineering student.</h1>
+        </div>
+    </div>
+</div>
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-1">
+                <img src="images/man.png" alt="Deadpool Image">
+            </div>
+            <div class="about-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>
+                    I am a passionate and driven computer engineering student 
+                    with a strong interest in technology, innovation, and problem-solving. My academic journey 
+                    has equipped me with a solid foundation in computer systems, programming, and electronics,
+                    and I enjoy applying this knowledge to design creative solutions.<br>
+
+                    I have experience with programming languages such as Python, C++, 
+                    and Java, and I am enthusiastic about exploring areas like embedded systems, 
+                    artificial intelligence, and software development. Beyond academics, I enjoy working on 
+                    personal projects that allow me to experiment with new technologies and deepen my understanding of the field.
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills', event)">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience', event)">Experience</p>
+                    <p class="tab-links" onclick="opentab('education', event)">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Programming Languages</span><br>Python, C, C++</li>
+                        <li><span>Database Management</span><br>MySQL, MongoDB</li>
+
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span></span><br></li>
+                        <li><span></span><br></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2067-2074</span><br>Everest View English School</li>
+                        <li><span>2075-2076</span><br>Takshashila Academy and College</li>
+                        <li><span>2077-Current</span><br>Khwopa College Of Engineering</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!---servicees----->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div> 
+                <i class="fa-solid fa-book-skull"></i>
+                <h2></h2>
+                <p></p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-skull"></i>
+                <h2></h2>
+                <p></p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-wallet"></i>
+                <h2></h2>
+                <p></p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!----portfolio--->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/web.png" alt="Deadpool">
+                <div class="layer">
+                    <h3>Deadpool an Wolverine</h3>
+                    <p>The combination of the most wanted mutants.</p>
+                    <a href="#"><i class="fa-solid fa-link-slash"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/computer.png" alt="solo">
+                <div class="layer">
+                    <h3>Solo Deadpool</h3>
+                    <p>Deadpool vs all mutants.</p>
+                    <a href="#"><i class="fa-solid fa-link-slash"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/car.png" alt="dp and wvl">
+                <div class="layer">
+                    <h3>Deadpool an Wolverine again</h3>
+                    <p>The combination of the deadliest mutants to fight Cassandra.</p>
+                    <a href="#"><i class="fa-solid fa-link-slash"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+<!----contact=---->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h4 class="sub-title">Contact Me</h4>
+                <p><i class="fa-regular fa-envelope"></i> Email: richardkhewa66@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> Phone: +977-9823649756</p>
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    <a href=""><i class="fa-brands fa-square-whatsapp"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-discord"></i></a>
+                </div>
+                <a href="images/citizen.jpg" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form id="contactForm">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                    <p id="formMessage" class="message"></p>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright @RKL </p>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname, event) {
+        // Remove active class from all tab links and tab contents
+        for (let tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+        for (let tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+
+        // Add active class to the clicked tab link
+        event.currentTarget.classList.add("active-link");
+
+        // Add active class to the corresponding tab content
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<!---google form ko lagi js chatgpt bata taneko -->
+<script>
+    document.getElementById("contactForm").addEventListener("submit", async function (event) {
+        event.preventDefault(); // Prevent default form submission
+
+        const form = event.target;
+        const formData = new FormData(form);
+        const messageElement = document.getElementById("formMessage");
+
+        // Clear previous messages
+        messageElement.textContent = "";
+        messageElement.className = "message";
+
+        try {
+            const response = await fetch("https://script.google.com/macros/s/AKfycbxctpvleem36H-OveqfrSbGh3Jx0lYwGu_rRXmNcJEJsC4OshPZHZ9NgbMiCOhuCLRZoA/exec", {
+                method: "POST",
+                body: formData
+            });
+
+            if (response.ok) {
+                const jsonResponse = await response.json();
+                if (jsonResponse.result === "success") {
+                    messageElement.textContent = "Message sent successfully!";
+                    messageElement.classList.add("success");
+                    form.reset(); // Reset the form
+                } else {
+                    messageElement.textContent = "Failed to send the message. Please try again.";
+                    messageElement.classList.add("error");
+                }
+            } else {
+                messageElement.textContent = "Failed to send the message. Please try again.";
+                messageElement.classList.add("error");
+            }
+        } catch (error) {
+            console.error("Error submitting the form:", error);
+            messageElement.textContent = "An error occurred. Please try again later.";
+            messageElement.classList.add("error");
+        }
+    });
+</script>
+
+
+<!--- formspree.io ko lagi js 
+<<script>
+    document.getElementById("contactForm").addEventListener("submit", async function (event) {
+        event.preventDefault(); // Prevent default form submission
+
+        const form = event.target;
+        const formData = new FormData(form);
+        const messageElement = document.getElementById("formMessage");
+
+        // Clear previous messages
+        messageElement.textContent = "";
+        messageElement.className = "message";
+
+        try {
+            const response = await fetch("https://formspree.io/f/xldevynd", {
+                method: "POST",
+                body: formData,
+                headers: {
+                    Accept: "application/json"
+                }
+            });
+
+            if (response.ok) {
+                messageElement.textContent = "Message sent successfully!";
+                messageElement.classList.add("success");
+                form.reset(); // Reset the form
+            } else {
+                messageElement.textContent = "Failed to send the message. Please try again.";
+                messageElement.classList.add("error");
+            }
+        } catch (error) {
+            console.error("Error submitting the form:", error);
+            messageElement.textContent = "An error occurred. Please try again later.";
+            messageElement.classList.add("error");
+        }
+    });
+</script>
+  ----->
+
+<!--- <script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbzJBB5hGjN98uSWuj6GTstiUGJWEuM67V6VaLA1Rv5jvnxhg38KB9oYIjj7lEax825jNA/exec'
+  const form = document.forms['submit-to-google-sheet']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>  ---->
+</body>
+</html>
