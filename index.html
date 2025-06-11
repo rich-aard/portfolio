@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,227 +8,236 @@
     <title>Richard Limbu</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/d07ab9e57a.js" crossorigin="anonymous"></script>
-
 </head>
+
 <body>
-<div id="header">
-    <div class="container">
-        <nav>
-            <img src="images/avatar.png" class="logo" alt="Deadpool Logo">
-            <ul id="sidemenu">
-                <li><a href="#header">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-               <!---- <i class="fa-regular fa-rectangle-xmark" onclick="closemenu()"></i>--->
-            </ul>
-           <!--- <i class="fa-solid fa-ellipsis" onclick="openmenu"></i>--->
-        </nav>
-        <div class="header-text">
-            <p></p>
-            <h1>Hi, I'm <span>Richard Khewa Limbu.</span> <br>And I'm an engineering student.</h1>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/avatar.png" class="logo" alt="Profile Avatar">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Welcome to my digital space</p>
+                <h1>Hi, I'm <span>Richard Khewa Limbu</span><br>Engineering Student & Tech Enthusiast</h1>
+            </div>
         </div>
     </div>
-</div>
-<div id="about">
-    <div class="container">
-        <div class="row">
-            <div class="about-1">
-                <img src="images/man.png" alt="Deadpool Image">
-            </div>
-            <div class="about-2">
-                <h1 class="sub-title">About Me</h1>
-                <p>
-                    I am a passionate and driven computer engineering student 
-                    with a strong interest in technology, innovation, and problem-solving. My academic journey 
-                    has equipped me with a solid foundation in computer systems, programming, and electronics,
-                    and I enjoy applying this knowledge to design creative solutions.<br>
 
-                    I have experience with programming languages such as Python, C++, 
-                    and C, and I am enthusiastic about exploring areas like embedded systems, 
-                    artificial intelligence, and software development. Beyond academics, I enjoy working on 
-                    personal projects that allow me to experiment with new technologies and deepen my understanding of the field.
-                </p>
-                <div class="tab-titles">
-                    <p class="tab-links active-link" onclick="opentab('skills', event)">Skills</p>
-                    <p class="tab-links" onclick="opentab('experience', event)">Experience</p>
-                    <p class="tab-links" onclick="opentab('education', event)">Education</p>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-1">
+                    <img src="images/man.png" alt="Profile Image">
                 </div>
-                <div class="tab-contents active-tab" id="skills">
-                    <ul>
-                        <li><span>Programming Languages</span><br>Python, C, C++</li>
-                        <li><span>Database Management</span><br>MySQL, MongoDB</li>
+                <div class="about-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        I am a passionate and driven computer engineering student
+                        with a strong interest in technology, innovation, and problem-solving. My academic journey
+                        has equipped me with a solid foundation in computer systems, programming, and electronics,
+                        and I enjoy applying this knowledge to design creative solutions.
+                    </p>
+                    <p>
+                        I have experience with programming languages such as Python, C++,
+                        and C, and I am enthusiastic about exploring areas like embedded systems,
+                        artificial intelligence, and software development. Beyond academics, I enjoy working on
+                        personal projects that allow me to experiment with new technologies.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills', event)">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience', event)">Experience</p>
+                        <p class="tab-links" onclick="opentab('education', event)">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming Languages</span><br>Python, C, C++ - Building robust applications and
+                                solving complex problems</li>
+                            <li><span>Database Management</span><br>MySQL, MongoDB - Designing and managing efficient
+                                data storage solutions</li>
+                            <li><span>Others</span><br>Numpy, pandas, Pytorch, Tensorflow</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Academic Projects</span><br>Various engineering projects showcasing practical
+                                application of theoretical knowledge</li>
+                            <li><span>Personal Development</span><br>Continuous learning through online courses and
+                                hands-on experimentation</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2067-2074</span><br>Everest View English School - Foundation education with strong
+                                academic performance</li>
+                            <li><span>2075-2076</span><br>Takshashila Academy and College - Higher secondary education
+                                in science stream</li>
+                            <li><span>2077-2081</span><br>Khwopa College Of Engineering - Bachelor's in Computer
+                                Engineering</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-                    </ul>
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Software Development</h2>
+                    <p>Creating custom software solutions using modern programming languages and frameworks</p>
+                    <a href="#">Learn More</a>
                 </div>
-                <div class="tab-contents" id="experience">
-                    <ul>
-                        <li><span></span><br></li>
-                        <li><span></span><br></li>
-                    </ul>
+                <div>
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h2>Web Development</h2>
+                    <p>Building responsive and interactive websites with modern web technologies</p>
+                    <a href="#">Learn More</a>
                 </div>
-                <div class="tab-contents" id="education">
-                    <ul>
-                        <li><span>2067-2074</span><br>Everest View English School</li>
-                        <li><span>2075-2076</span><br>Takshashila Academy and College</li>
-                        <li><span>2077-Current</span><br>Khwopa College Of Engineering</li>
-                    </ul>
+                <div>
+                    <i class="fa-solid fa-microchip"></i>
+                    <h2>Machine Learning</h2>
+                    <p>Building beginner level ML projects.</p>
+                    <a href="#">Learn More</a>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<!---servicees----->
-<div id="services">
-    <div class="container">
-        <h1 class="sub-title">My Services</h1>
-        <div class="services-list">
-            <div> 
-                <i class="fa-solid fa-book-skull"></i>
-                <h2></h2>
-                <p></p>
-                <a href="#">Learn More</a>
-            </div>
-            <div>
-                <i class="fa-solid fa-skull"></i>
-                <h2></h2>
-                <p></p>
-                <a href="#">Learn More</a>
-            </div>
-            <div>
-                <i class="fa-solid fa-wallet"></i>
-                <h2></h2>
-                <p></p>
-                <a href="#">Learn More</a>
-            </div>
-        </div>
-    </div>
-</div>
-<!----portfolio--->
-<div id="portfolio">
-    <div class="container">
-        <h1 class="sub-title">My work</h1>
-        <div class="work-list">
-            <div class="work">
-                <img src="images/web.png" alt="work1">
-                <div class="layer">
-                    <h3></h3>
-                    <p>To be done.</p>
-                    <a href="#"><i class="fa-solid fa-link-slash"></i></a>
-                </div>
-            </div>
-            <div class="work">
-                <img src="images/computer.png" alt="work2">
-                <div class="layer">
-                    <h3></h3>
-                    <p>To be done.</p>
-                    <a href="#"><i class="fa-solid fa-link-slash"></i></a>
-                </div>
-            </div>
-            <div class="work">
-                <img src="images/car.png" alt="work3">
-                <div class="layer">
-                    <h3></h3>
-                    <p>To be done.</p>
-                    <a href="#"><i class="fa-solid fa-link-slash"></i></a>
-                </div>
-            </div>
-        </div>
-        <a href="#" class="btn">See More</a>
-    </div>
-</div>
-<!----contact=---->
-<div id="contact">
-    <div class="container">
-        <div class="row">
-            <div class="contact-left">
-                <h4 class="sub-title">Contact Me</h4>
-                <p><i class="fa-regular fa-envelope"></i> Email: richardkhewa66@gmail.com</p>
-                <p><i class="fa-solid fa-phone"></i> Phone: +977-9823649756</p>
-                <div class="social-icons">
-                    <a href=""><i class="fa-brands fa-facebook"></i></a>
-                    <a href=""><i class="fa-brands fa-instagram"></i></a>
-                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
-                    <a href=""><i class="fa-brands fa-square-whatsapp"></i></a>
-                    <a href=""><i class="fa-brands fa-twitter"></i></a>
-                    <a href=""><i class="fa-brands fa-discord"></i></a>
-                </div>
-                <a href="images/citizen.jpg" download class="btn btn2">Download CV</a>
-            </div>
-            <div class="contact-right">
-                <form id="contactForm">
-                    <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="email" name="email" placeholder="Your email" required>
-                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                    <button type="submit" class="btn btn2">Submit</button>
-                    <p id="formMessage" class="message"></p>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
 
-<script>
-    var tablinks = document.getElementsByClassName("tab-links");
-    var tabcontents = document.getElementsByClassName("tab-contents");
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/web.png" alt="Web Project">
+                    <div class="layer">
+                        <h3>Web Application</h3>
+                        <p>Some basic frontend and backend integration.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/computer.png" alt="Software Project">
+                    <div class="layer">
+                        <h3>Backend </h3>
+                        <p>Basic blog website.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/car.png" alt="IoT Project">
+                    <div class="layer">
+                        <h3>ML and AI</h3>
+                        <p>Some basic ML regression and classification projects.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="btn-center">
+                <a href="#" class="btn">See More Projects</a>
+            </div>
+        </div>
+    </div>
 
-    function opentab(tabname, event) {
-        // Remove active class from all tab links and tab contents
-        for (let tablink of tablinks) {
-            tablink.classList.remove("active-link");
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-regular fa-envelope"></i> richardkhewa66@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +977-9823649756</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        <a href=""><i class="fa-brands fa-square-whatsapp"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-discord"></i></a>
+                    </div>
+                    <a href="images/citizen.jpg" download class="btn">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form id="contactForm">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn">Send Message</button>
+                        <p id="formMessage" class="message"></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname, event) {
+            // Remove active class from all tab links and tab contents
+            for (let tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (let tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+
+            // Add active class to the clicked tab link
+            event.currentTarget.classList.add("active-link");
+
+            // Add active class to the corresponding tab content
+            document.getElementById(tabname).classList.add("active-tab");
         }
-        for (let tabcontent of tabcontents) {
-            tabcontent.classList.remove("active-tab");
-        }
 
-        // Add active class to the clicked tab link
-        event.currentTarget.classList.add("active-link");
+        // Contact form submission
+        document.getElementById("contactForm").addEventListener("submit", async function (event) {
+            event.preventDefault(); // Prevent default form submission
 
-        // Add active class to the corresponding tab content
-        document.getElementById(tabname).classList.add("active-tab");
-    }
-</script>
-<!---google form js -->
-<script>
-    document.getElementById("contactForm").addEventListener("submit", async function (event) {
-        event.preventDefault(); // Prevent default form submission
+            const form = event.target;
+            const formData = new FormData(form);
+            const messageElement = document.getElementById("formMessage");
 
-        const form = event.target;
-        const formData = new FormData(form);
-        const messageElement = document.getElementById("formMessage");
+            // Clear previous messages
+            messageElement.textContent = "";
+            messageElement.className = "message";
 
-        // Clear previous messages
-        messageElement.textContent = "";
-        messageElement.className = "message";
+            try {
+                const response = await fetch("https://script.google.com/macros/s/AKfycbxctpvleem36H-OveqfrSbGh3Jx0lYwGu_rRXmNcJEJsC4OshPZHZ9NgbMiCOhuCLRZoA/exec", {
+                    method: "POST",
+                    body: formData
+                });
 
-        try {
-            const response = await fetch("https://script.google.com/macros/s/AKfycbxctpvleem36H-OveqfrSbGh3Jx0lYwGu_rRXmNcJEJsC4OshPZHZ9NgbMiCOhuCLRZoA/exec", {
-                method: "POST",
-                body: formData
-            });
-
-            if (response.ok) {
-                const jsonResponse = await response.json();
-                if (jsonResponse.result === "success") {
-                    messageElement.textContent = "Message sent successfully!";
-                    messageElement.classList.add("success");
-                    form.reset(); // Reset the form
+                if (response.ok) {
+                    const jsonResponse = await response.json();
+                    if (jsonResponse.result === "success") {
+                        messageElement.textContent = "Message sent successfully!";
+                        messageElement.classList.add("success");
+                        form.reset(); // Reset the form
+                    } else {
+                        messageElement.textContent = "Failed to send the message. Please try again.";
+                        messageElement.classList.add("error");
+                    }
                 } else {
                     messageElement.textContent = "Failed to send the message. Please try again.";
                     messageElement.classList.add("error");
                 }
-            } else {
-                messageElement.textContent = "Failed to send the message. Please try again.";
+            } catch (error) {
+                console.error("Error submitting the form:", error);
+                messageElement.textContent = "An error occurred. Please try again later.";
                 messageElement.classList.add("error");
             }
-        } catch (error) {
-            console.error("Error submitting the form:", error);
-            messageElement.textContent = "An error occurred. Please try again later.";
-            messageElement.classList.add("error");
-        }
-    });
-</script>
+        });
+    </script>
 
 </body>
+
 </html>
